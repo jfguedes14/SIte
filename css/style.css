@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color:#f1f6fc31;
+}
+section,
+footer {
+    background-color:;
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn {
+    background-color: rgb(245, 199, 139);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s; 
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+   
+.btn:hover{
+    background-color: rgb(239, 172, 86);
+
+}
+@keyframes animate-outline{
+    from{
+        outline: 0px solid rgb(250, 218, 176);
+    }
+    to{
+        outline: 15px solid rgb(250, 218, 176);
+
+    }
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after {
+    content: "";
+    background-color: rgba(249, 211, 123, 0.936);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+/* menu mobile*/
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+/*--sobre--*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+}
+.sobre .sobre-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.sobre .sobre-text h3{
+    font-size: 56px;
+}
+.sobre .sobre-tex p{
+    margin: 5px 0 50px 0;
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img{
+    width: 100%;
+}
+.atendimento h3{
+    text-align: center;
+}
+.atendimento p{
+    margin: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.atendimento .card-item{
+    background-color: rgb(5, 1, 55);
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+.atendimento .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+.atendimento .card-item .atendimento-oline{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.atendimento .card-item p{
+    color: white;
+    font-weight: ;
+    font-size: 20px;
+    margin: 15px;
+}
+.atendimento .card-item:hover{
+    background-color: rgb(239, 172, 86);
+    margin-top: -5px;
+}
+/* redes sociais*/
+.rede-social h3{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.rede-social .container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer{
+    background-color: rgb(5, 1, 55);
+    text-align: center;
+}
+.footer p{
+    color: white;
+    font-weight: 300;
+}
+@media(max-width: 830px){
+    background-color: ;
+}
